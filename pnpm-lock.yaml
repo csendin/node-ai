@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      dotenv:
+        specifier: ^17.2.0
+        version: 17.2.0
+      openai:
+        specifier: ^5.9.0
+        version: 5.9.0
     devDependencies:
       '@biomejs/biome':
         specifier: 2.1.1
@@ -235,6 +242,10 @@ packages:
   '@types/node@24.0.13':
     resolution: {integrity: sha512-Qm9OYVOFHFYg3wJoTSrz80hoec5Lia/dPp84do3X7dZvLikQvM1YpmvTBEdIr/e+U8HTkFjLHLnl78K/qjf+jQ==}
 
+  dotenv@17.2.0:
+    resolution: {integrity: sha512-Q4sgBT60gzd0BB0lSyYD3xM4YxrXA9y4uBDof1JNYGzOXrQdQ6yX+7XIAqoFOGQFOTK1D3Hts5OllpxMDZFONQ==}
+    engines: {node: '>=12'}
+
   esbuild@0.25.6:
     resolution: {integrity: sha512-GVuzuUwtdsghE3ocJ9Bs8PNoF13HNQ5TXbEi2AhvVb8xU1Iwt9Fos9FEamfoee+u/TOsn7GUWc04lz46n2bbTg==}
     engines: {node: '>=18'}
@@ -247,6 +258,18 @@ packages:
 
   get-tsconfig@4.10.1:
     resolution: {integrity: sha512-auHyJ4AgMz7vgS8Hp3N6HXSmlMdUyhSUrfBF16w153rxtLIEOE+HGqaBppczZvnHLqQJfiHotCYpNhl0lUROFQ==}
+
+  openai@5.9.0:
+    resolution: {integrity: sha512-cmLC0pfqLLhBGxE4aZPyRPjydgYCncppV2ClQkKmW79hNjCvmzkfhz8rN5/YVDmjVQlFV+UsF1JIuNjNgeagyQ==}
+    hasBin: true
+    peerDependencies:
+      ws: ^8.18.0
+      zod: ^3.23.8
+    peerDependenciesMeta:
+      ws:
+        optional: true
+      zod:
+        optional: true
 
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
@@ -383,6 +406,8 @@ snapshots:
     dependencies:
       undici-types: 7.8.0
 
+  dotenv@17.2.0: {}
+
   esbuild@0.25.6:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.25.6
@@ -418,6 +443,8 @@ snapshots:
   get-tsconfig@4.10.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
+
+  openai@5.9.0: {}
 
   resolve-pkg-maps@1.0.0: {}
 
